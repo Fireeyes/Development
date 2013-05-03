@@ -31,12 +31,18 @@
 |		});
 |
 */
+Route::controller(Controller::detect());
 
 Route::get('/', function()
 {
 	return View::make('home.index');
 });
 
+Route::get ('register' ,  'authenticator@register');
+Route::get ('login'    ,  'authenticator@login'   );
+Route::get ('logout'   ,  'authenticator@logout'  );
+Route::post('login'    ,  'authenticator@login'   );
+Route::post('register' ,  'authenticator@register');
 /*
 |--------------------------------------------------------------------------
 | Application 404 & 500 Error Handlers
