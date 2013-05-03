@@ -61,7 +61,7 @@ class Authenticator_Controller extends Base_Controller {
 				'password' => Input::get('password')
 				));
 
-			Redirect::home()-with('success', 'You have successfully registered.');
+			Redirect::home()->with('success', 'You have successfully registered.');
 		}
 		else
 		{
