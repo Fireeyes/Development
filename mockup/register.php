@@ -20,27 +20,45 @@
 
     <body>
 
-        <form action="" method="">
+        <form class="form-horizontal" action="" method="">
             <fieldset>
+                
                 <legend> Register now! </legend>
                 
-                <label> Your username </label>
-                <input type="text" placeholder="> " name="username">
-                <span class="help-block">Should be between 4-12 characters</span>
+                <div class="control-group">
+                    <label class="control-label" for="inputUser"> Your username </label>
+                    <div class="controls">
+                        <input type="text" id="inputUser" placeholder="> " name="username">
+                        <span class="help-block">Should be between 4-12 characters</span>
+                    </div>
+                </div>
 
-                <label> Your e-mail </label>
-                <input type="text" placeholder="> " name="email">
-                <span class="help-block">Your primary e-mail address</span>
+                <div class="control-group">
+                    <label class="control-label" for="inputEmail"> Your e-mail </label>
+                    <div class="controls">
+                        <input type="text" id="inputEmail" placeholder="> " name="e-mail">
+                        <span class="help-block">Your primary e-mail address</span>
+                    </div>
+                </div>
 
-                <label> Your password </label>
-                <input type="password" placeholder="> " name="email">
-                <span class="help-block">Choose a complex password</span>
+                <div class="control-group">
+                    <label class="control-label" for="inputPass"> Your password </label>
+                    <div class="controls">
+                        <input type="password" id="inputPass" placeholder="> " name="password">
+                        <span class="help-block">Choose a complex password</span>
+                    </div>
+                </div>
 
-                <label> Retype password </label>
-                <input type="password" placeholder="> " name="email">
-                <span class="help-block">Retype your password</span>
+                <div class="control-group">
+                    <label class="control-label" for="inputPass2"> Your password </label>
+                    <div class="controls">
+                        <input type="password" id="inputPass2" placeholder="> " name="repassword">
+                        <span class="help-block">Retype your password</span>
+                        <button type="submit" class="btn" style="margin-top:10px;">Register me!</button>
+                    </div>
+                </div>
                 
-                <button type="submit" class="btn">Register me!</button>
+                
 
             </fieldset>
         </form>
