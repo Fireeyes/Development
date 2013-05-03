@@ -103,7 +103,7 @@
 
 
              
-              <div class="container">
+              <div class="footer container">
                 <p class="muted credit">Our blog is made by us, doh <a href="#">Copyright®</a> In consectetur mollis dolor vitae cursus. Nulla iaculis, velit quis porta blandit, diam nibh porta ante, et commodo erat eros vitae nibh. Nulla</p>
               </div>
              
