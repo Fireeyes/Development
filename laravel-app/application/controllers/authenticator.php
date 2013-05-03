@@ -27,7 +27,7 @@ class Authenticator_Controller extends Base_Controller {
 			}
 		else
 			{
-			return Redirect::to('login')->with('login_errors', true);
+			return Redirect::to('/')->with('login_errors', true);
 			}
 	}
 

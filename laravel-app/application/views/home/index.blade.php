@@ -1,3 +1,6 @@
+<?php
+$loaded =  false;
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -28,14 +31,14 @@
 					<span>Welcome back, {{Auth::user()->username;}}</span><br>
 					<span><a href="logout">Logout</a></span>
 				@else
-					<a href="#" class="modalInput" rel="#yesno">Login</a> | <a href="register">Register</a>
+					<a href="#" class="modalInput" rel="#login">Login</a> | <a href="register">Register</a>
 				@endif
 
 			</div>
 		</div>
 	</div>
 
-	<div class="modal-popup" id="yesno">
+	<div class="modal-popup" id="login">
 
 	 	{{ Form::open('login', 'POST', array('class' => 'form-horizontal')) }}
             <fieldset>
@@ -54,9 +57,10 @@
                     <div class="controls">
                         {{Form::password('password', array('placeholder' => '> '))}}
                         <span class="help-block">
-                            @if(Session::get('login_errors') == true) 
+                            @if(Session::get('login_errors') == true && $loaded == false) 
                                 <?php 
                                     echo "Incorrect username and password combination.";
+                                    $loaded = true;
                                 ?>
                             @endif
                         </span>
@@ -73,6 +77,8 @@
 	</div>
 	<script>
 	$(document).ready(function() {
+
+
 		var triggers = $(".modalInput").overlay({
 
 		// some mask tweaks suitable for modal dialogs
@@ -82,32 +88,17 @@
 			opacity: 0.8
 		},
 
-		closeOnClick: false
+		closeOnClick: true,
+		@if(Session::get('login_errors') == true) 
+			load: true,
+		@endif
+		onClose: function() {
+			<?php $loaded = true ?> 
+		}
 	});
 
-	var buttons = $("#yesno button").click(function(e) {
 
-		// get user input
-		var yes = buttons.index(this) === 0;
 
-		// do something with the answer
-		triggers.eq(0).html("You clicked " + (yes ? "yes" : "no"));
-	});
-
-	$("#prompt form").submit(function(e) {
-
-	// close the overlay
-	triggers.eq(1).overlay().close();
-
-	// get user input
-	var input = $("input", this).val();
-
-	// do something with the answer
-	triggers.eq(1).html(input);
-
-	// do not submit the form
-	return e.preventDefault();
-	});
 	});
 </script>
 </body>
