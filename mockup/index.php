@@ -89,7 +89,7 @@
 
                 </div>
 
-                <div class="span4 aside">
+                <div class="span44 aside img-polaroid">
                     <h2> Categories by tags </h2>
                     <ul class="nav nav-list">
                         <li><a href="#">tag 1</a></li>
