@@ -54,18 +54,42 @@
                         <p class='lead'></p>
                         <hr/>
                             <form action="" method="" class="form-horizontal">
+    							<legend class="post">Insert a new post</legend>
+    							
+    							<div class="control-group">	
+    								
+    								<label class="control-label">Post title:</label>
+    								
+    								<div class="controls">
+    									<input type="text" name="" placeholder="> ">
+    								</div>
+    							
+    							</div>
+
+    							<div class="control-group">	
+    								
+    								<label class="control-label">Post tags:</label>
+    								
+    								<div class="controls">
+    									<input type="text" name="" placeholder="> ">
+    								</div>
+    							
+    							</div>
+
     							<div class="control-group">
-    								
-    								<legend class="post">Insert a new post</legend>
-    								
+
     								<label class="control-label">Post text:</label>
     								
     								<div class="controls">
     									<textarea rows="9" class="input-xxlarge">{{ $post_text_plm }}</textarea>
     								</div>
+    								
+    							</div>
+
     								<div class="controls">
-    									<button type="submit" class="btn btn-inverse publishbtn">Publish</button>
+    									<button type="submit" class="btn btn-inverse">Publish</button>
     								</div>
+    								
     							</div>
     						</form>
                     </div>
