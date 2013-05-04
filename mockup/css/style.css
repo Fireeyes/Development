@@ -37,7 +37,24 @@ body {
 }
 
 .aside {
-	margin-top:25px;
+	margin-top:20px;
+    border-radius: 5px;
+
+}
+.tags
+{
+    font-style:italic; 
+    padding-left: 10px;
+    color: #888;
+}
+
+small
+{
+    color: #888;
+}
+.post
+{
+    padding-left: 10px;
 }
 
 .lead {
