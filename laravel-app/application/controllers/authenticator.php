@@ -65,7 +65,8 @@ class Authenticator_Controller extends Base_Controller {
 		}
 		else
 		{
-			return Redirect::to('/register')->with('errors', $v->errors);
+			return Redirect::to('/')->with('errors', $v->errors)
+									->with('register_errors', true);
 		}
 	}
 

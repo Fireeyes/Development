@@ -35,7 +35,10 @@ Route::controller(Controller::detect());
 
 Route::get('/', function()
 {
-	return View::make('home.index');
+	$posts = Post::with('author')->all();
+
+	return View::make('home.index')
+				->with('posts', $posts);
 });
 
 Route::get ('register' ,  'authenticator@register');

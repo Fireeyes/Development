@@ -66,27 +66,6 @@
                         </p>
                     </div>
 
-
-                    <!-- Last post div repeated, delete this one -->
-                    <div class="divpost img-polaroid">
-                        <h2 align="center">Post title goes here</h2>
-                        
-                        <p class='lead'>03 May 2013</p>
-                        <p class='lead'>by&nbsp;<a href="#">Nelly Furtado</a></p>
-                        
-                        <p class="content">
-                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitor suscipit est, eu condimentum nisi commodo et. Vivamus quis purus erat. Donec consectetur tortor vitae neque consequat ac tempor ipsum tincidunt. Nullam pellentesque nulla sed felis elementum pellentesque. Quisque fringilla erat quis purus sagittis eu vulputate neque faucibus. Mauris at venenatis urna. Nulla in libero ipsum. Vivamus purus velit, convallis sed facilisis et, rutrum vitae nulla. Integer consequat elit at justo rhoncus accumsan.
-                            Phasellus sagittis hendrerit placerat. In consectetur mollis dolor vitae cursus. Nulla iaculis, velit quis porta blandit, diam nibh porta ante, et commodo erat eros vitae nibh. Nulla facilisi. Aenean eget sem a augue ultrices interdum. Nunc id mattis purus. Ut vulputate mollis augue a laoreet. Fusce mollis molestie erat, non vulputate sapien tincidunt sit amet. Praesent lobortis purus at tortor hendrerit sed aliquam purus adipiscing. Aliquam ante lacus, molestie id mattis quis, faucibus quis ante. Pellentesque odio elit, tincidunt sed luctus ac, blandit sit amet metus. Maecenas quis massa odio, quis tempus nulla. Aenean eros dolor, commodo id pretium nec, faucibus at velit. Aenean egestas odio ac massa sodales hendrerit. 
-                        </p>
-
-                        <p class="lead">Tags: 
-                            <a href="#">tag 1</a>
-                            <a href="#">tag 2</a>
-                            <a href="#">tag 3</a>
-                        </p>
-                    </div>
-                    <!-- fin of delete this one -->
-
                 </div>
 
                 <div class="span44 aside img-polaroid">
