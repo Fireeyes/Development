@@ -41,7 +41,7 @@
             <div class="row">
                 <div class="span12">
                     <h2 id="caption" align="center">Have no fear of perfection, as you will never reach it!</h2>
-                    <img src="img/header.jpg" class="img-polaroid" width="940" height="300">
+                    <img src="img/header.jpg" class="img-polaroid" width="930" height="300">
                 </div>
             </div>
 
