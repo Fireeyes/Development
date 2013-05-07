@@ -37,10 +37,14 @@ Route::get('/', function()
 {
 	$posts = Post::with('author')->all();
 
-	return View::make('home.index')
+	return View::make('posts.all')
 				->with('posts', $posts);
 });
-
+Route::get('/view/(:any)', function($post_id)
+		{
+			return View::make('posts.single')
+				->with('post_id', $post_id);
+		});
 Route::get ('register' ,  'authenticator@register');
 Route::get ('login'    ,  'authenticator@login'   );
 Route::get ('logout'   ,  'authenticator@logout'  );

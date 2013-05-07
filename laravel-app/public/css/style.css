@@ -1,8 +1,4 @@
 /* nelly zone */
-body
-{
-    padding-top: 60px;
-}
 .modal-popup {
     background-color:#fff;
     display:none;
@@ -17,10 +13,7 @@ body
     -moz-box-shadow: 0 0 50px #ccc;
     -webkit-box-shadow: 0 0 50px #ccc;
   }
-.userdata
-{
-    float:right;
-}
+ 
 .modal-popup h2 {
     
     margin:0px;
@@ -41,6 +34,7 @@ body {
 .divpost {
 	border-radius: 5px;
 	margin-top:20px;
+    background-color: white;
 }
 
 .aside {
@@ -87,4 +81,25 @@ small
 
 .span44 h3 {
     margin-left: 6px;
+}
+
+.comment {
+    color:white;
+    background-color: rgba(22, 150, 133,.9);
+}
+
+.atooltip {
+    height: 0; width: 0;
+    border-right: 30px solid transparent;
+    border-bottom: 20px solid rgba(22, 150, 133,.9);
+    border-left: 0 solid transparent;
+}
+
+.anothertooltip {
+    float: right;
+    position: relative;top:-10px;
+    height: 0; width: 0;
+    border-left: 30px solid transparent;
+    border-top: 20px solid rgba(22, 150, 133,.9);
+    border-right: 0 solid transparent;
 }
